@@ -1,0 +1,19 @@
+﻿@model Introducao.Models.Usuario
+
+@{
+    ViewBag.Title = "Resultado Usuários";
+}
+
+<h2>Listar dados usuários</h2>
+
+<fildset>
+    <legend>Dados do Usuário</legend>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+</fildset>
+
