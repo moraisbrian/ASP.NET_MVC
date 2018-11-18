@@ -5,7 +5,7 @@
 }
 
 <h2>Validação de usuário</h2>
-@using (Html.BeginForm())
+@using (Html.BeginForm("Usuario", "Usuario", FormMethod.Post))
 {
     @Html.ValidationSummary(true)
 <fildset>

@@ -19,6 +19,26 @@ namespace Introducao.Controllers
         [HttpPost]
         public ActionResult Usuario(Usuario usuario)
         {
+            //if (string.IsNullOrEmpty(usuario.Nome))
+            //{
+            //    ModelState.AddModelError("Nome", "O campo nome é obrigatório");
+            //}
+
+            //if (string.IsNullOrEmpty(usuario.Senha) && string.IsNullOrEmpty(usuario.ConfirmarSenha))
+            //{
+            //    ModelState.AddModelError("", "O campo senha e confirmação de senha são obrigatórios");
+            //}
+
+            //if(usuario.Senha != usuario.ConfirmarSenha)
+            //{
+            //    ModelState.AddModelError("", "Senha diferente");
+            //}
+
+            //if(usuario.Idade < 1)
+            //{
+            //    ModelState.AddModelError("Idade", "Idade não pode ser menor que 1");
+            //}
+
             if (ModelState.IsValid)
             {
                 return View("Resultado", usuario);
