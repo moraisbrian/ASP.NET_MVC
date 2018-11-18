@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Rotas.Models.Noticia>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Rotas em ASP.NET MVC</h2>
+
+<div>
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Titulo), "MostrarNoticia", "Home", new{
+                
+                }
+
+            </li>
+        }
+    </ul>
+
+</div>
