@@ -24,18 +24,21 @@ namespace Rotas.Controllers
             return View(ultimasNoticias);
         }
 
-        public ActionResult About()
+        public ActionResult TodasAsNoticias()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            return View(todasAsNoticias);
+        }
+        
+        public ActionResult MostraNoticia(int noticiaId, string titulo, string categoria)
+        {
+            return View(todasAsNoticias.FirstOrDefault(x => x.NoticiaId == noticiaId));
         }
 
-        public ActionResult Contact()
+        public ActionResult MostraCategoria(string categoria)
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            var categoriaEspecifica = todasAsNoticias.Where(x => x.Categoria.ToLower() == categoria.ToLower()).ToList();
+            ViewBag.categoria = categoria;
+            return View(categoriaEspecifica);
         }
     }
 }

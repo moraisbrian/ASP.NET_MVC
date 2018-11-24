@@ -55,7 +55,7 @@ namespace Rotas.Models
                         {
                             NoticiaId = 5,
                             Categoria = "Humor",
-                            Titulo = "O Comediante Anderson Renato fará shou hoje",
+                            Titulo = "O Comediante Anderson Renato fará show hoje",
                             Conteudo = "O comediante mais engraçados dos comentários do Youtube fará show...",
                             Data = new DateTime(2017,3,1)
                         },
