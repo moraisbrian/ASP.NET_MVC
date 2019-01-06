@@ -1,4 +1,4 @@
-public IEnumerable<Noticia> TodasAsNoticias()
+ public IEnumerable<Noticia> TodasAsNoticias()
         {
             var retorno = new Collection<Noticia>
                 {
